@@ -1,0 +1,138 @@
+@import url(https://fonts.googleapis.com/css?family=Phudu:300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,800,800italic,900,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Phudu", cursive; */
+  font-family: "Alegreya", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  color: #fbea80;
+  font-size: 70px;
+  font-weight: lighter;
+}
+.aw-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.aw-align-center {
+  align-items: center;
+}
+/* header */
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 10px 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+nav ul.aw-navigation {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul.aw-navigation li a {
+  display: block;
+  padding: 0 16px;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+nav ul.aw-navigation li:last-child a {
+  padding-right: 0;
+}
+nav ul.aw-navigation li a:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 0;
+  background-color: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+nav ul.aw-navigation li a:hover:after {
+  width: 100%;
+  opacity: 1;
+  background-color: red;
+}
+
+.aw-main-banner {
+  width: 100%;
+  
+}
+
+.aw-header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.aw-header-content {
+  display: block;
+  width: 100%;
+}
+.aw-arrow {
+  display: inline-block;
+  padding: 20px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  cursort: pointer;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  margin-top: 10ch;
+}
+.aw-arrow:hover {
+  opacity: 0.7;
+}
+/* logo */
+.aw-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: block; */
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  font-size: 26px;
+  /* line-height: 60px;
+  text-align: center; */
+
+  border: 2px solid #fff;
+  border-radius: 100%;
+}
+
+/* Animations */
+.aw-pulsate {
+  -webkit-animation: pulsate 3s ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0.3;
+}
+
+@-webkit-keyframes pulsate {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
